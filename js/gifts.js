@@ -31,7 +31,7 @@ export const gifts = [
   { qr: "500", name: "Um upgrade no setup dos recém-casados", desc: "Para garantir que o amor continue rodando a 144 FPS.", price: "R$ 500,00", icon: "pc" },
   { qr: "750", name: "Mala extra pra levar cuscuz e tapioca", desc: "Porque podemos sair do Ceará, mas não precisamos abandonar nossa culinária nordestina.", price: "R$ 750,00", icon: "mala" },
   { qr: "1000", name: "Ajuda para descobrir por que tudo é tão caro", desc: "Uma contribuição para o choque de realidade financeiro.", price: "R$ 1.000,00", icon: "interrogacao" },
-  { qr: "1500", name: "Não temos ideia do que você quer comprar com isso, mas obrigado", desc: "Sua generosidade ultrapassou nossa capacidade de criar uma justificativa plausível.", price: "R$ 1.500,00", icon: "caixa" },
+  { qr: "1500", name: "Não temos ideia do que comprar com isso, mas obrigado", desc: "Sua generosidade ultrapassou nossa capacidade de criar uma justificativa plausível.", price: "R$ 1.500,00", icon: "caixa" },
   { qr: "2000", name: "Perguntar quando vêm os filhos", desc: "A taxa oficial para fazer essa pergunta inconveniente.", price: "R$ 2.000,00", icon: "bebe" },
   { qr: "4000", name: "Pedir outra pessoa em casamento durante o nosso", desc: "Inclui climão, constrangimento e possível expulsão da festa.", price: "R$ 4.000,00", icon: "alerta" },
   { qr: "33599,99", name: "RTX 5090", desc: "Finalmente, um investimento realmente essencial para a vida de casados.", price: "R$ 33.599,99", icon: "chip" }
