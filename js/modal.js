@@ -28,13 +28,15 @@ export function openModal(gift, pixCode) {
   qrCanvas.innerHTML = "";
   if (pixCode) {
     try {
-      new QRCode(qrCanvas, {
-        text: pixCode,
-        width: 176,
-        height: 176,
-        colorDark: "#4A3B52",
-        colorLight: "#ffffff"
-      });
+      const qr = qrcode(0, "M"); // 0 = escolhe a versão automaticamente
+      qr.addData(pixCode);
+      qr.make();
+      qrCanvas.innerHTML = qr
+        .createSvgTag({ cellSize: 4, margin: 0, scalable: true })
+        .replace(/black/g, "#4A3B52");
+      const svg = qrCanvas.querySelector("svg");
+      svg.setAttribute("width", "176");
+      svg.setAttribute("height", "176");
     } catch (e) {
       qrCanvas.innerHTML = '<div style="width:176px;height:176px;display:flex;align-items:center;justify-content:center;color:#999;font-size:12px;">QR indisponível</div>';
     }
